@@ -1,0 +1,72 @@
+/*
+ * Memora theme for the handbook system.
+ * Values come from Memora/console/src/app/globals.css, the console's dark theme
+ * (html[data-theme="dark"]): Supabase-style surfaces, hairline borders, 6px radii
+ * and one green brand colour. Tokens the console has no dark value for
+ * (borders for status badges, the dimmed accent) are mixed from its colours.
+ * Fonts: Inter, the console's --font-sans, and IBM Plex Mono for code
+ * (both SIL OFL 1.1, see assets/fonts/*-LICENSE.txt). The console's mono stack is
+ * the system ui-monospace, which cannot be embedded, so Plex stands in.
+ */
+
+@font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Regular.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Medium.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/Inter-SemiBold.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Bold.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "IBM Plex Mono"; src: url("assets/fonts/IBMPlexMono-400.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "IBM Plex Mono"; src: url("assets/fonts/IBMPlexMono-500.woff2") format("woff2"); font-weight: 500; }
+
+:root {
+  /* Surfaces: canvas, rail, panel, surface, surface-strong */
+  --bg: #111213;
+  --bg-sidebar: #141416;
+  --surface: #19191b;
+  --surface-2: #202124;
+  --surface-3: #2a2b2f;
+  --surface-raised: #19191b;
+  --surface-hover: #26272b;
+  --chip: #2a2b2f;
+
+  /* Lines */
+  --border: #2c2d31;
+  --border-strong: #3a3b40;
+  --border-row: #232427;
+  --grid: #1d1e21;
+  --divider: #44464c;
+
+  /* Text: ink, graph-edge-lit, ink-secondary, ink-tertiary */
+  --text: #ededee;
+  --text-2: #c9ccd2;
+  --text-3: #a3a5ab;
+  --text-4: #7d8087;
+
+  /* Brand green */
+  --accent: #3ecf8e;
+  --accent-strong: #3ecf8e;
+  --accent-soft: #3ecf8e;
+  --accent-softer: #6ee7b7;
+  --accent-dim: #1f5e43;
+  --accent-bg: #11291f;
+  --on-accent: #003a26;   /* brand-ink: text on a filled green */
+
+  /* Status */
+  --ok: #4cc38a;
+  --ok-border: #1f5e43;
+  --warn: #e2b350;
+  --warn-soft: #e2b350;
+  --warn-border: #5c4919;
+  --warn-bg: #2d2410;
+  --danger: #f27a73;
+  --danger-soft: #f27a73;
+  --danger-border: #5f2b28;
+  --danger-bg: #331b19;
+  --info: #67a9ec;
+  --info-border: #24456b;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* The console's radii: 6px almost everywhere. */
+  --radius: 6px;
+  --mark-radius: 6px;
+}

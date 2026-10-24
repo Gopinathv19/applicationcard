@@ -1,0 +1,14 @@
+{
+  "name": "applicationcard",
+  "private": true,
+  "type": "module",
+  "description": "Visual product handbooks rendered from content modules to HTML and PDF.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "pdf": "node scripts/export-pdf.mjs",
+    "handbook": "node scripts/handbook.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.47.2"
+  }
+}
